@@ -1,0 +1,144 @@
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.flex {
+	display: flex;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	background-color: #d2d2d2;
+}
+
+
+.flex1 {
+	flex-flow: row wrap;	
+	justify-content: start-flex;
+}
+.flex1 div {
+	flex: 1;
+	padding: 20px 0;
+}
+
+
+.flex2 {
+	display: flex;
+	justify-content: flex-end;
+
+}
+
+
+
+.flex3 {
+	flex-flow: row wrap;	
+	justify-content: center;
+}
+.flex3 div{
+	flex: 1 1 240px;
+	width: 100px;
+}
+
+
+
+
+
+
+
+.flex4 div:first-child {
+	flex: 1;
+}
+
+
+.flex4 div:last-child {
+	flex: 6;
+}
+
+
+
+
+.circle {
+	width: 70px;
+	height: 70px;
+	background: #00abec;
+	border-radius: 50px;
+}
+
+.line {	
+	position: absolute;
+	background: #00abec;
+	height: 3px;
+	width: 80%;
+
+	margin: 0 auto;
+
+	z-index: -1;
+}
+
+
+.flex5 {
+	display: flex;
+	justify-content: center;
+}
+
+.test {
+	display: flex;
+	justify-content: center;
+	flex-flow: column wrap;
+	text-align: center;	
+	height: 140px;
+}
+.test div {
+	flex: 1 1 0;
+}
+
+
+
+
+
+
+
+/*@media screen and (max-width: 480px) {
+	.container .cols {	width: 100% !important;}
+	.steps p {font-size: 18px;}	
+}
+
+@media screen and (max-width: 1234px) and (min-width: 481px) {
+	.small {width: 50% !important; }
+	.company p {font-size: 16px;}
+	.sources {height: auto; min-height: 100px; font-size: 18px;}
+	.steps p {font-size: 16px;}
+}
+
+
+@media screen and (max-width: 760px) {
+	.small {width: 100% !important; }
+	.medium {width: 100% !important;}
+	.sources {height: auto; min-height: 60px;}
+	.line {display: none;}
+	.steps p {font-size: 18px;}
+	.social p {display: none;}
+
+} 
+
+@media screen and (max-width: 760px) and (min-width: 481px) {
+	.large {width: 50% !important;}
+} 
+
+@media screen and (max-width: 960px) {
+	.space{width: 100% !important;}
+	.space img {display: none;}
+	.mainblock .medium {width: 100% !important;}
+	.mainblock {background: none; height: auto;}
+	.mainblock h1 {margin: 10px 0}
+	.back1 {height: auto;}
+} 
+
+@media screen and (max-width: 900px)  and (min-width: 761px) {
+	.large  {width: 33% !important; height: 200px;}
+} 
+
+
+*/
