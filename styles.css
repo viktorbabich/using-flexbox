@@ -10,7 +10,13 @@
 	width: 100%;
 	max-width: 960px;
 	margin: 0 auto;
-	background-color: #d2d2d2;
+	/*background-color: #d2d2d2;*/
+}
+
+
+.back1 {
+	background: radial-gradient(closest-corner circle at 70% 100%, #09c9f5, #00bbf1);
+	border-top: 5px solid #eee;
 }
 
 
@@ -24,10 +30,13 @@
 }
 
 
+.block1 {
+	color: white;
+}
+
 .flex2 {
 	display: flex;
 	justify-content: flex-end;
-
 }
 
 
@@ -36,21 +45,41 @@
 	flex-flow: row wrap;	
 	justify-content: center;
 }
-.flex3 div{
-	flex: 1 1 240px;
-	width: 100px;
+.flex3 div {
+	flex: 1;
+	max-width: 240px;
+	padding: 15px;
+}
+.flex3 div img {
+	border: 2px solid #d7d7d7;
+	filter: grayscale(100%);
+}
+.flex3 div:hover img {
+	border: 3px solid #7bb63c;
+	filter: none;
+/*	margin-bottom: -1px;*/
+}
+.flex3 div:hover p {
+	color: #7bb63c;
 }
 
 
 
 
-
-
+.back2 {
+	background-color: rgb(0, 120, 215);
+}
+.flex4 div p {
+	color: white;
+	padding: 50px 0;
+}
+.flex4 div span {
+	color: rgb(197, 213, 51);
+}
 
 .flex4 div:first-child {
 	flex: 1;
 }
-
 
 .flex4 div:last-child {
 	flex: 6;
@@ -58,6 +87,26 @@
 
 
 
+.flex5 div {
+	color: rgb(0, 120, 215);
+	border: 2px solid rgb(0, 120, 215);
+	padding: 10px 20px;
+	justify-content: space-between;
+	margin: 10px;
+
+}
+.flex5 div:hover {
+	border-color: rgb(123, 182, 60);
+	color: white;
+	background-color: rgb(123, 182, 60);
+}
+
+
+
+
+.flex6{
+	
+}
 
 .circle {
 	width: 70px;
@@ -77,22 +126,6 @@
 	z-index: -1;
 }
 
-
-.flex5 {
-	display: flex;
-	justify-content: center;
-}
-
-.test {
-	display: flex;
-	justify-content: center;
-	flex-flow: column wrap;
-	text-align: center;	
-	height: 140px;
-}
-.test div {
-	flex: 1 1 0;
-}
 
 
 
