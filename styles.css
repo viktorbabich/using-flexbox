@@ -1,8 +1,15 @@
 
-
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Segoe Ui'
+}
+h1 {
+	font-weight: 300;
+	font-size: 48px;
 }
 
 .flex {
@@ -28,17 +35,28 @@
 	flex: 1;
 	padding: 20px 0;
 }
+.flex2 {
+	justify-content: flex-end;
+}
+.flex2 img {
+	padding-left: 8px; 
+}
+.flex2 span {
+	padding-right: 7px;
+	font-size: 16px;
+	color: #b1b0b1; 
+}
 
 
 .block1 {
 	color: white;
 }
-
-.flex2 {
+.test {
 	display: flex;
-	justify-content: flex-end;
 }
-
+.test div {
+	flex: 1;
+}
 
 
 .flex3 {
@@ -49,6 +67,7 @@
 	flex: 1;
 	max-width: 240px;
 	padding: 15px;
+	font-weight: bolder;
 }
 .flex3 div img {
 	border: 2px solid #d7d7d7;
@@ -75,6 +94,7 @@
 }
 .flex4 div span {
 	color: rgb(197, 213, 51);
+	font-weight: 600;
 }
 
 .flex4 div:first-child {
@@ -93,6 +113,7 @@
 	padding: 10px 20px;
 	justify-content: space-between;
 	margin: 10px;
+	font-weight: 600;
 
 }
 .flex5 div:hover {
@@ -104,13 +125,22 @@
 
 
 
-.flex6{
-	
+
+
+.flex6 div {
+	flex-flow: row wrap;	
+	justify-content: center;
+}
+.flex6 div span {
+	font-weight: 600;
+	font-size: 48px;
 }
 
 .circle {
 	width: 70px;
 	height: 70px;
+	max-width: 70px;
+	max-height: 70px;
 	background: #00abec;
 	border-radius: 50px;
 }
@@ -120,16 +150,20 @@
 	background: #00abec;
 	height: 3px;
 	width: 80%;
-
 	margin: 0 auto;
-
 	z-index: -1;
 }
+.flex6-1 {
+	display: flex;
+	flex-flow: column nowrap;	
+	text-align: center;
+	align-content: flex-start;
 
-
-
-
-
+}
+.flex6-1 div {
+	flex: 1 1 150px;
+	margin: 10px;
+}
 
 
 
